@@ -2,3 +2,6 @@
 <h4><%= @artist.nationality %></h4>
 
 <img class='artist-photo' src="<%= @artist.photo_url %>">
+
+<p><%= link_to "Edit", edit_artist_path(@artist) %></p>
+<p><%= link_to "Delete", artist_path(@artist), method: :delete %></p>
